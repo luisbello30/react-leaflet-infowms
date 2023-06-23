@@ -1,0 +1,32 @@
+{
+  "name": "react-17",
+  "version": "1.0.0",
+  "description": "Installing transform jsx react jsx - transform --> this avoid importing",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "react-leaflet-infowms": "1.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "@babel/core": "7.12.13",
+    "@babel/plugin-transform-react-jsx": "7.12.13",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^3.4.1",
+    "eslint-plugin-react": "^7.26.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "leaflet": "^1.7.1",
+    "prettier": "^2.8.8",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-leaflet": "^3.2.0",
+    "react-scripts": "4.0.3"
+  },
+  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
+}

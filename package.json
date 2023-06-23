@@ -1,0 +1,78 @@
+{
+  "name": "react-leaflet-infowms",
+  "version": "1.1.0",
+  "author": "Luis Bello <luisbello30@gmail.com> (https://about.me/luisbello30)",
+  "license": "MIT",
+  "description": "You can create a URL with WMS request data GetFeatureInfo about a map image coordinate and get it from a callback",
+  "source": "src/index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "clean": "rm -Rf dist/ example/src/react-wms-info/",
+    "lint:old": "eslint --ext .js --ext .ts --ext .tsx",
+    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx,json}'",
+    "lint:fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx,json}'",
+    "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
+    "build": "tsc && tsc -b example.tsconfig.json && npm run minify",
+    "build:types": "tsc --emitDeclarationOnly",
+    "prepublishOnly": "npm run clean && npm run lint && npm run build",
+    "minify": "uglifyjs --compress --mangle --output dist/index.min.js -- dist/index.js"
+  },
+  "files": ["dist/**/*"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisbello30/react-leaflet-infowms.git"
+  },
+  "keywords": [
+    "leaflet",
+    "wms",
+    "map",
+    "react",
+    "leaflet",
+    "leaflet-infowms",
+    "react-leaflet",
+    "react-leaflet-v3",
+    "leaflet-plugins",
+    "react-leaflet-plugins"
+  ],
+  "bugs": {
+    "url": "https://github.com/luisbello30/react-leaflet-infowms/issues"
+  },
+  "homepage": "https://github.com/luisbello30/react-leaflet-infowms#readme",
+  "dependencies": {
+    "leaflet-infowms": "^1.0.15"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "^7.22.1",
+    "@babel/preset-env": "^7.22.4",
+    "@babel/preset-react": "^7.22.3",
+    "@babel/preset-typescript": "^7.21.5",
+    "@react-leaflet/core": "^1.1.0",
+    "@types/leaflet": "^1.7.1",
+    "@types/node": "^17.0.38",
+    "@types/react": "^16.9.54",
+    "@typescript-eslint/eslint-plugin": "^5.59.8",
+    "@typescript-eslint/parser": "^5.59.8",
+    "eslint": "^8.41.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "leaflet": "^1.7.1",
+    "leaflet-infowms": "^1.1.0",
+    "prettier": "^2.8.8",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-leaflet": "^3.2.0",
+    "typescript": "^4.0.5",
+    "uglify-js": "^3.5.15"
+  },
+  "peerDependencies": {
+    "leaflet": "^1.7.0",
+    "react": "^15.0.0 || ^16.0.0 || ^17.0.0",
+    "react-dom": "^15.0.0 || ^16.0.0 || ^17.0.0",
+    "react-leaflet": "^3.0.0"
+  }
+}
