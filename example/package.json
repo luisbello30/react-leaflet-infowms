@@ -4,6 +4,7 @@
   "description": "Installing transform jsx react jsx - transform --> this avoid importing",
   "keywords": [],
   "main": "src/index.js",
+  "homepage": "./",
   "dependencies": {
     "react-leaflet-infowms": "1.1.0"
   },
