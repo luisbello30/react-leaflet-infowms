@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/styles.css"],"names":[],"mappings":"AAAA,KAEE,uDAA2D,CAC3D,cACF,CAEA,UALE,eAQF,CAHA,KACE,WAEF","file":"main.f82cd79c.chunk.css","sourcesContent":["body {\n  overflow: hidden;\n  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-size: 0.8em;\n}\n\n.map {\n  height: 60vh;\n  overflow: hidden;\n}\n"]}
