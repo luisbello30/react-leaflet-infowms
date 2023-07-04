@@ -5,11 +5,12 @@ import {
   LeafletContextInterface,
   updateGridLayer,
 } from '@react-leaflet/core'
-import { TileLayerOptions } from 'leaflet'
+import { LeafletEventHandlerFnMap, TileLayerOptions } from 'leaflet'
 
 interface wmsLayerProps extends TileLayerOptions {
   url: string
   params: WMSParams
+  eventHandlers?: LeafletEventHandlerFnMap
 }
 
 function createInfoWMSTileLayer(props: wmsLayerProps, context: LeafletContextInterface) {
