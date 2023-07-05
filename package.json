@@ -1,6 +1,6 @@
 {
   "name": "react-leaflet-infowms",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "author": "Luis Bello <luisbello30@gmail.com> (https://about.me/luisbello30)",
   "license": "MIT",
   "description": "You can create a URL with WMS request data GetFeatureInfo about a map image coordinate and get it from a callback",
@@ -41,7 +41,7 @@
   },
   "homepage": "https://github.com/luisbello30/react-leaflet-infowms#readme",
   "dependencies": {
-    "leaflet-infowms": "^1.1.0"
+    "leaflet-infowms": "^1.1.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.21.5",
